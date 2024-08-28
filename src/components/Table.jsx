@@ -10,7 +10,8 @@ const Table = ({ visibleData,setSearch }) => {
               <button onClick={()=>setSearch('')} className='btn btn-outline-success fw-bold fs-4 mx-5 '>La liste Complet des Dossiers</button>
             </div>
             <div className="card-body p-2">
-              <table className="table table-striped table-bordered text-center">
+              <div className="table-responsive">
+                            <table className="table table-striped table-bordered text-center">
                 <thead className="table-info">
                   <tr>
                     <th>Nom</th>
@@ -82,6 +83,8 @@ const Table = ({ visibleData,setSearch }) => {
                   )}
                 </tbody>
               </table>
+              </div>
+
             </div>
           </div>
         </div>
